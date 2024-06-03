@@ -36,7 +36,7 @@ public class User extends AbstractEntity implements UserDetails  {
     @Column(nullable = false)
     private LocalDate birthday;
 
-    @ManyToMany(fetch = FetchType.EAGER)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
     @JoinTable(
             name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id"),

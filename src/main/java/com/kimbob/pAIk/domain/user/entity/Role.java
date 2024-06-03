@@ -8,8 +8,6 @@ import lombok.Setter;
 import lombok.ToString;
 import org.springframework.security.core.GrantedAuthority;
 
-import java.util.UUID;
-
 @Getter @Setter @ToString @NoArgsConstructor
 @Entity
 public class Role extends AbstractEntity implements GrantedAuthority {

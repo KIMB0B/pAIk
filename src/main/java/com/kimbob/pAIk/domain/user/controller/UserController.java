@@ -45,7 +45,6 @@ public class UserController {
     public ResponseEntity<User> createUser(@ModelAttribute UserSignUpDTO userSignUpDto) {
         Set<String> roleNames = Set.of("USER");
         User createdUser = userService.create(userSignUpDto, roleNames);
-        log.info("User created: {}", createdUser);
         return ResponseEntity.ok(createdUser);
     }
 
