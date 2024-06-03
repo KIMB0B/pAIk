@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link th:href="@{/css/style.css}" href="../static/css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1><a href="/">식재료 기반 요리 추천 서비스</a></h1>
+    <nav>
+        <ul>
+            <li><a href="/login">로그인</a></li>
+            <li><a href="/signup">회원가입</a></li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <p>이 사이트는 사용자가 자신의 냉장고에 있는 식재료를 입력하면, AI가 그에 맞는 요리를 추천해주고 레시피를 제공하는 서비스입니다.</p>
+    <img src="kitchen.jpg" alt="Kitchen" style="width:100%; height:auto;">
+</section>
+<footer>
+    <p>© 2024 식재료 기반 요리 추천. 모든 권리 보유.</p>
+</footer>
+</body>
+</html>
