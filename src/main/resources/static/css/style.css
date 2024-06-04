@@ -81,6 +81,12 @@ button:hover {
     font-size: small;
     margin-top: 0;
 }
+.signup-message {
+    color: #20c997;
+    text-align: center;
+    font-size: small;
+    margin-top: 0;
+}
 .logout-message {
     color: #20c997;
     text-align: center;

@@ -48,7 +48,7 @@ public class UserServiceImpl implements UserService {
     public User create(UserSignUpDTO userSignUpDto, Set<String> roleNames) {
         Set<Role> roles = roleNames.stream()
                 .map(roleName -> roleService.findByAuthority(roleName)
-                        .orElseThrow(() -> new RuntimeException("Role not found: " + roleName)))
+                        .orElseThrow(() -> new RuntimeException("새로 생성할 계정의 해당 역할을 찾지 못했습니다.: " + roleName)))
                 .collect(Collectors.toSet());
         User user = userSignUpDto.toUser(roles);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
